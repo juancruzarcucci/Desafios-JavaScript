@@ -14,25 +14,25 @@ let respuesta = undefined;
 
 let montoAPagar = 0;
 
-// arrayPrecios=[];
+arrayPrecios=[];
 
-// arrayDemanda=[];
-
-
-// for(const producto of productos) {
-//     console.log( producto.precio ) 
-//     arrayPrecios.push(producto.precio)
-//     console.log(producto.demanda)
-//     arrayDemanda.push(producto.demanda)
-// }
-
-// console.log(arrayPrecios.sort())
-
-// let demandaOrden = console.log(arrayDemanda.sort((a, b) => {
-//     return a-b;
-//     }
-// ))
+arrayDemanda=[];
 
 
-// console.log(`La demanda de los productos es de  ${demandaOrden}`)
+for(const producto of productos) {
+    console.log( producto.precio ) 
+    arrayPrecios.push(producto.precio)
+    console.log(producto.demanda)
+    arrayDemanda.push(producto.demanda)
+}
+
+console.log(arrayPrecios.sort())
+
+let demandaOrden = console.log(arrayDemanda.sort((a, b) => {
+    return a-b;
+    }
+))
+
+
+console.log(`La demanda de los productos es de  ${demandaOrden}`)
 
