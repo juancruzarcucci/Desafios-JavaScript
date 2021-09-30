@@ -33,17 +33,46 @@ const stockValidator = (cantidad, stock) =>{
 // 
 const agregarAlCarro = (venta, cantidad ) =>{
    const encontrar = productos.find(producto=>producto.id === venta)
+   var nombreProducto = encontrar.nombre
+   var fotoProducto = encontrar.imagen
+   
    stockValidator(cantidad, encontrar.stock)
    if (stockValidator(false)) {
        montoAPagar += cantidad*encontrar.precio;
        productos[venta-1].stock -= cantidad;
        alert(`Se agregó ${encontrar.nombre} a la cuenta, el monto a pagar es de $${montoAPagar}`)
    }
+
+   const armarTarjeta =(producto, cantidad, precio, foto)=>{
+    const cardContainer = document.createElement("div");
+    cardContainer.classList.add("card-container")
+    container.appendChild(cardContainer)
+
+    const card = document.createElement("div");
+    card.classList.add("card");
+    cardContainer.appendChild(card);
+
+    const divFotoCard = document.createElement("div");
+    divFotoCard.classList.add("div-foto","card");
+    cardContainer.appendChild(divFotoCard);
+    divFotoCard.innerHTML = ` <img src="${fotoProducto}.jpg" class="foto">`
+
+   
+
+    card.innerHTML = `<h1>COMPRA REALIZADA CON EXITO</h1>
+    <p><b>${producto}</b> ha sido agregado al carrito correctamente</p>
+    <p>Cantidad: <b>${cantidad}</b></p>
+    <p>Precio total a pagar: <b>$${precio}</b></p>
+    `
+    
+    // <img src="${fotoProducto}.jpg">
+    // fotoProducto
+}
+
+
+   armarTarjeta(nombreProducto, cantidad, montoAPagar )
 }
 const container = document.createElement("div");
 container.classList.add("container");
 document.body.appendChild(container);
 
-
-const armarTarjeta =()=>{
-}

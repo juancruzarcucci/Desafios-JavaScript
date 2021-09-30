@@ -12,10 +12,10 @@ do {
     let cantidad = parseInt(prompt(preguntarCantidad))
     
     agregarAlCarro(venta, cantidad)
+ 
 
-  respuesta = prompt(`Desea seguir comprando? Si/No`)
-  respuesta = respuesta.toUpperCase
-
+  respuesta = prompt(`Desea seguir comprando? Si/No`).toUpperCase()
+  // respuesta = toUpperCase.respuesta
     
 } while (respuesta == "SI");
 

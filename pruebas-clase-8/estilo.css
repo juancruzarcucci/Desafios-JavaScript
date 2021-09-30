@@ -1,0 +1,35 @@
+
+
+/* .body{
+    background-color: #111;
+} 
+
+.rojo{
+    background-color: red;
+}
+
+
+.tarjeta{
+    width: 100px;
+    height: 100px;
+    background-color: #444;
+    border-radius:  10px;
+    margin: auto;
+} */
+
+.container{ 
+box-sizing: border-box;
+background-color: #ddd;
+width: auto;
+height: 100vh;
+display: flex;
+flex-direction: row;
+}
+
+.div{
+    width: 300px;
+    height: 400px;
+    margin: 15px;
+    background-color: #444;
+    color: #fff;
+}
