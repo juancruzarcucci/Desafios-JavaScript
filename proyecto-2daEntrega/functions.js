@@ -73,7 +73,7 @@ const showMenu = ()=>{
 for (const producto of productos) {
 
     const newProduct =`<div class="flex-item">
-    <h2 class="item-name">${producto.nombre}</h2>
+    <h2 class="item-name"><b>${producto.nombre}</b></h2>
     <div class="img-container"><img src="${producto.imagen}.jpg" class="img" alt=""></div>
     <p class="flex-text flex-price">PRECIO <b>$${producto.precio}</b></p><br>
     <p class="flex-text">SELECCIONE CANTIDAD</p><input type="number" class="cantidad" id="cantidad${producto.id}"> <br>

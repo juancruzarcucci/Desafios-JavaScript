@@ -1,6 +1,8 @@
 *{
     box-sizing: border-box;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
+    font-family: 'Bebas Neue', cursive;
+    /* font-size: 28px; */
     margin: 0;
 }
 body{
@@ -9,10 +11,12 @@ body{
 }
 .titulo-1{
     text-align: center;
+    font-size: 70px;
 }
 .titulo-2{
     text-align: center;
     margin-top: 50px ;
+    font-size: 50px;
 }
 
 
@@ -33,7 +37,10 @@ body{
 
 }
 .item-name{
-    color: #fff;
+    color: #ccc;
+    /* font-family: 'Yanone Kaffeesatz', sans-serif; */
+    font-family: 'Barlow Condensed', sans-serif;
+    padding-bottom: 10px;
     font-size: 40px;
 }
 .img-container{
@@ -48,27 +55,21 @@ body{
 .cantidad{
     background: #222;
     color: #fff;
-    margin: 8px;
+    margin: 8px 0 15px;
     width: 40px;
     border: none;
 }
 .flex-text{
     color: #fff;
     display: inline-block;
-    margin: 10px 2px;
+    font-size: 25px;
+    margin: 5px 2px;
     /* font-style: italic; */
 }
 .flex-price{
     margin-top: 10px;
 }
-.button{
-    border: none;
-    color: #fff;
-    background: #444;
-    height: 35px;
-    width: 100px;
-    border-radius: 3px;
-}
+
 .button:focus{
     background: #000;
 }
@@ -79,6 +80,7 @@ body{
     height: 35px;
     width: 100px;
     border-radius: 3px;
+    font-size: 20px;
 }
 .container-boton-carrito-de-compras{
     margin: 30px;
@@ -86,7 +88,7 @@ body{
 }
 .button-2{
     width: 150px;
-    height: 40px;
+    height: 60px;
     margin: auto;
     padding: 5px 2px 5px 2px ;
 }
