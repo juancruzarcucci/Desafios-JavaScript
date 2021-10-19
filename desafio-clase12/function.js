@@ -33,11 +33,7 @@ const showMenu=()=>{
         `<div class="info">
     <p>${producto.info}</p>
     </div>`)
-    $(` body`).on("scroll",()=>{
-        console.log("hoola")
-        $(`.flex-item${producto.id}`).animate({"top":"+=50px"}, "fast", "linear")
-    })
-
+  
     $(`#infoButton${producto.id}`).on("click",()=>{
         
         $(".info").toggle("fast")
