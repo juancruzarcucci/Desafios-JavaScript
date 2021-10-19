@@ -2,7 +2,6 @@
     box-sizing: border-box;
     /* font-family: sans-serif; */
     font-family: 'Bebas Neue', cursive;
-    /* font-size: 28px; */
     margin: 0;
 }
 body{
@@ -53,8 +52,9 @@ li{
     justify-content: space-around;
 }
 .flex-item{
-    margin: 20px 50px;
-    border: 3px solid black;
+    margin: 40px 50px;
+    /* border: 3px solid black; */
+    box-shadow: 0 10px 10px  #000;
     padding: 10px 30px;
     border-radius: 10px;
 
@@ -115,6 +115,13 @@ li{
     margin: auto;
     padding: 5px 2px 5px 2px ;
 }
+/* ------------INFO----------- */
+.info{
+    color: #fff;
+    margin: 10px auto;
+    width: 250px;
+    background-color: rgba(75, 75, 75, 0.5);
+}
 /* ---------------------------MODAL----------------- */
 .modal{
     width: 100%;
@@ -122,8 +129,9 @@ li{
     background: rgba(75, 75, 75, 0.5);
     position: absolute;
     top: 0;
-    display: flex;
-    /* display: none; */
+    /* display: flex; */
+    display: none;
+    margin: auto;
    
 }
 .modal-child{
@@ -157,6 +165,7 @@ li{
 .ok{
     color: #fff;
     text-decoration: none;
+    font-size: 25px;
 }
 .monto-a-pagar{
     margin: 20px auto;
