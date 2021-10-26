@@ -6,6 +6,9 @@ productos.push({id:3, nombre: "Air Sneakers 3", precio: 300, stock: 10, demanda:
 productos.push({id:4, nombre: "Air Sneakers 4", precio: 250, stock: 2, demanda: 3, imagen: `/img/foto-noticia-5`, info: `Se entregan en un plazo de 7 dias habiles. Vienen con caja y etiqueta original.`});
 productos.push({id:5, nombre: "Air Sneakers 5", precio: 310, stock: 12, demanda: 4, imagen: `/img/foto-noticia-6`, info: `Se entregan en un plazo de 7 dias habiles. Vienen con caja y etiqueta original.`});
 productos.push({id:6, nombre: "Air Sneakers 6", precio: 230, stock: 15, demanda: 5, imagen: ` /img/foto-noticia-7`, info: `Se entregan en un plazo de 7 dias habiles. Vienen con caja y etiqueta original.`});
+productos.push({id:7, nombre: "Air Sneakers 7", precio: 110, stock: 15, demanda: 5, imagen: ` /img/foto-noticia-8`, info: `Se entregan en un plazo de 7 dias habiles. Vienen con caja y etiqueta original.`});
+productos.push({id:8, nombre: "Air Sneakers 8", precio: 220, stock: 15, demanda: 5, imagen: ` /img/foto-noticia-9`, info: `Se entregan en un plazo de 7 dias habiles. Vienen con caja y etiqueta original.`});
+productos.push({id:9, nombre: "Air Sneakers 9", precio: 250, stock: 15, demanda: 5, imagen: ` /img/foto-noticia-10`, info: `Se entregan en un plazo de 7 dias habiles. Vienen con caja y etiqueta original.`});
 
 
 let carritoDeCompras = [];

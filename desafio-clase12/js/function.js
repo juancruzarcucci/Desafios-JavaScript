@@ -17,7 +17,7 @@ const showMenu=()=>{
     <h2 class="item-name"><b>${producto.nombre}</b></h2>
     <div class="img-container"><img src="${producto.imagen}.jpg" class="img" alt=""></div>
     <p class="flex-text flex-price">PRECIO <b>$${producto.precio}</b></p><br>
-    <div class="div-info${producto.id}" >
+    <div  id="div-info${producto.id}" >
     <input type="button" id="infoButton${producto.id}" class="button" value="info"> <br>
     </div>
     <p class="flex-text">SELECCIONE CANTIDAD</p><input type="number" class="cantidad" id="cantidad${producto.id}"> <br>
@@ -29,14 +29,16 @@ const showMenu=()=>{
     let qty = document.getElementById(`cantidad${producto.id}`);
 
     
-    $(`.div-info${producto.id}`).append(
-        `<div class="info">
+    $(`#div-info${producto.id}`).append(
+        `<div class="info" id="info${producto.id}">
     <p>${producto.info}</p>
     </div>`)
-  
-    $(`#infoButton${producto.id}`).on("click",()=>{
-        
-        $(".info").toggle("fast")
+   
+
+    $(`#infoButton${producto.id}`).on("click",(e)=>{
+    //    e.preventDefault()
+        // $(`#info${producto.id}`).classlist.add("info-1")
+        $(`#info${producto.id}`).toggle("fast")
     })
 
     $(`#button${producto.id}`).on("click",()=>{
