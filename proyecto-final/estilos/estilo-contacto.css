@@ -1,0 +1,177 @@
+*{
+    box-sizing: border-box;
+    /* font-family: sans-serif; */
+    font-family: 'Bebas Neue', cursive;
+    margin: 0;
+}
+/* -------HEADER----------- */
+header{
+    background-color: #fff;
+    height: 8vh;
+}
+
+.titulo-2{
+    text-align: center;
+    margin-top: 30px ;
+    font-size: 50px;
+}
+ul{
+    display: inline;
+}
+li{
+    display: inline-block;
+    font-size: 20px;
+    margin: 15px 8%;
+}
+.item-menu{
+    text-decoration: none;
+    color: rgba(43, 14, 117, 0.884);
+    padding: 1px;
+}
+.item-menu:hover{
+    background-color: rgba(43, 14, 117, 0.884);
+    color: #fff;
+    padding: 16px;
+}
+
+/*------------- TERMINA HEADER-------- */
+/* -------------MAPA------------------ */
+.container-mapa{
+    height: 40vh;
+}
+.mapa{
+    height: 100%;
+    width: 100%;
+}
+/* -----------TERMINA MAPA------------ */
+
+/* INICIA CONTAINER TITULO----------- */
+.banner-titulo{
+    height: 27vh;
+    background-color: #00000f;
+    text-align: center;
+    background-image: url(/img/banner-6.jfif);
+    background-size: contain;
+    /* padding-bottom: 10px; */
+    /* background-position: center; */
+}
+.banner-absolute{
+    position: absolute;
+    width: 100%;
+    height: 27vh;
+    background-color: rgba(75, 75, 75, 0.5);
+    
+}
+.titulo-nombre{
+    color: #fff;
+    font-size: 100px;
+    margin: 2.5% auto;
+}
+
+/* TERMINA CONTAINER TITULO */
+
+/*------------ INICIA CONTAINER FORM */
+.container-form{
+    /* height: 60vh; */
+    background-color:#fff;
+    display: flex;
+}
+.form{
+    margin: auto;
+    /* height: 45vh; */
+    width: 50%;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 5px #ccc;
+    display: inline-block;
+    text-align: center;
+    margin: 10vh auto;
+
+}
+.form-titulo{
+    font-size: 40px;
+    margin-top: 15px;
+    color: rgba(43, 14, 117, 0.884);
+}
+.input-form{
+    width: 70%;
+    background-color: #ccc;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    border-bottom: rgba(43, 14, 117, 0.884) 2px solid;
+}
+.input-form:focus{
+    border: none;
+    background-color: #444;
+    color: #fff;
+}
+#inputNombre{
+    margin: 3vh 15% 0 15%;
+}
+#inputEmail{
+    margin: 3vh 15% 8vh 15%;
+}
+#buttonForm{
+    border: none;
+    width: 20%;
+    padding: 10px 12px;
+    border-radius: 5px;
+    background-color:rgba(43, 14, 117, 0.884);
+    color: #fff;
+    margin: 0vh 40% 5vh 40%;
+    font-size: 15px;
+}
+#buttonForm:focus{
+    background-color: rgba(24, 1, 39, 0.884);
+    color: #fff;
+}
+/* TERMINA CONTAINER FORM */
+
+/* validacion */
+.red{
+    color: #c11;
+    margin: 15px 8px;
+}
+.green{
+    color: #1a0;
+    margin:0 8px  15px;
+}
+.none{
+    display: none
+}
+
+
+/* INICIO DE FOOTER */
+footer{
+    height: 35vh;
+    background-color: rgba(43, 14, 117, 0.884) ;
+}
+.titulo-footer{
+    font-size: 70px;
+    text-align: center;
+    color: #fff;
+}
+.footer-container{
+    margin-top: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.item-footer{
+    width: 70px;
+    height: 70px;
+    /* background-color: #fff; */
+    border-radius: 10px;
+}
+.img-footer-redes{
+    width: 100%;
+    height: 100%;
+    transition: .6s;
+}
+.img-footer-redes:hover{
+    transform: scale(1.2);
+}
+
+/* TERMINA FOOTER */

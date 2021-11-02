@@ -1,9 +1,9 @@
-const URLJSON = "data/datos.json"
+const URLEJSON = "data/datos.json"
 
 $("body").prepend(`<button id="buton">get info</button>`)
 
 $("#buton").on("click", ()=>{
-$.getJSON(URLJSON, function(result, state){
+$.getJSON(URLEJSON , function(result, state){
     if(state == "success"){
         let misDatos = result;
         for (const dato of misDatos) {
