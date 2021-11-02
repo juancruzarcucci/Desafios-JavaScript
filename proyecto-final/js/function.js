@@ -55,7 +55,6 @@ const stockValidator=(qty, stock)=>{
 
 $.getJSON(URLJSON, function (result, state){
     if(state == "success"){
-        console.log("andamo bien")
         const ejecutarCompra = ()=>{
             let misProductos = result;
             for (const producto of misProductos) {
@@ -127,40 +126,3 @@ $.getJSON(URLJSON, function (result, state){
             ejecutarCompra()
     }
 })
-// $.getJSON(URLJSON, function(result,state){
-// if (state == "success") {
-//     let misProductos = result;
-//     const showCards=()=>{
-//         // iteracion sobre el array de objetos
-//         for (const producto of misProductos) {
-    
-//             const newProduct= `<div class="flex-item flex-item${producto.id}">
-//             <h2 class="item-name"><b>${producto.nombre}</b></h2>
-//             <div class="img-container"><img src="${producto.imagen}.jpg" class="img" alt=""></div>
-//             <p class="flex-text flex-price">PRECIO <b>$${producto.precio}</b></p><br>
-//             <div  id="div-info${producto.id}" >
-//             <input type="button" id="infoButton${producto.id}" class="button" value="info"> <br>
-//             </div>
-//             <p class="flex-text">SELECCIONE CANTIDAD</p><input type="number" class="cantidad" id="cantidad${producto.id}"> <br>
-//             <input type="button" id="button${producto.id}" class="button" value="COMPRAR">
-//             </div>`
-    
-//             $(".container").append(newProduct);
-    
-//              //    CREO DIV INFO PARA EL BOTON TOGGLE
-//         $(`#div-info${producto.id}`).append(
-//             `<div class="info" id="info${producto.id}">
-//         <p>${producto.info}</p>
-//         </div>`)
-       
-//         // BOTON TOGGLE PARA DESPLEGAR INFO
-//         $(`#infoButton${producto.id}`).on("click",(e)=>{
-//             $(`#info${producto.id}`).toggle("fast")
-//         })
-       
-//         }
-//     }
-//     showCards()
-// }
-// })
-
